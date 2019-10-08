@@ -4,8 +4,7 @@ import Logo from '../logo/Logo'
 
 const Header = () => {
     return (
-        <header>
-            Header
+        <header data-test='header-component'>
             <div className="wrap">
                 <Logo />
             </div>

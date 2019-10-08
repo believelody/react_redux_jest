@@ -4,7 +4,7 @@ import LogoSrc from '../../assets/logo.png'
 const Logo = () => {
     return (
         <div className='logo'>
-            <img src={LogoSrc} alt='app logo' />
+            <img data-test='logo-img' src={LogoSrc} alt='app logo' />
         </div>
     )
 }
