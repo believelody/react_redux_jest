@@ -1,19 +1,13 @@
-import React from 'react'
-import { shallow } from 'enzyme'
 import Header from './Header'
 import '../../setupTests'
-import { findByTestAttr } from '../../utils'
-
-const setUp = (props = {}) => {
-    return shallow(<Header {...props} />)
-}
+import { findByTestAttr, setUp } from '../../utils'
 
 describe('Header Component', () => {
     let component;
     beforeEach(() => {
-        component = setUp()
-    })
-
+        component = setUp({component: Header})
+    })    
+    
     it('Should render without errors', () => {
         const header = findByTestAttr(component, 'header-component')
         expect(header.length).toBe(1)
