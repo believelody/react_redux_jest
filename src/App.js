@@ -2,6 +2,7 @@ import React from 'react'
 import './App.scss'
 import Header from './components/header/Header'
 import Headline from './components/headline/Headline'
+import PostList from './components/posts/PostList'
 
 const tempArr = [{
   fName: 'John',
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <main>
         <Headline header="Posts" desc="Click the button to render posts" users={tempArr} />
+        <PostList />
       </main>
     </div>
   )
