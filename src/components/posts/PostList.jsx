@@ -14,7 +14,7 @@ const PostList = ({ fetchPosts, post }) => {
     }, [post])
 
     return (
-        <div>
+        <div data-test='post-list-component'>
           <SharedButton buttonText='Get Posts' emitEvent={fetchPosts} />
           <ul>
             {
